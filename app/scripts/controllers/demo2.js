@@ -16,6 +16,9 @@ var delta = [ 0, 0 ];
 var stage = [ window.screenX, window.screenY, window.innerWidth, window.innerHeight ];
 getBrowserDimensions();
 
+
+var colors = ["#d5d5d5","rgb(0,177,223)"];
+
 var themes = [ 
 		[ "#000", "#732420", "#BF734C", "#ccc", "#736859" ]];
 
@@ -224,7 +227,7 @@ var radius = 75;
 
 	var graphics = circle.getContext( '2d' );
 
-	graphics.fillStyle = theme[ 3 ];
+	graphics.fillStyle = colors[i%2]; //theme[ 3 ];
 	graphics.beginPath();
 	graphics.arc( size * .5, size * .5, size * .5, 0, PI2, true );
 	graphics.closePath();
@@ -234,7 +237,7 @@ var radius = 75;
 
 	text = document.createElement( 'div' );
 	text.onSelectStart = null;
-	text.innerHTML = '<span style="color:' + theme[0] + ';font-size:10px;">Skill '+i+'</span>';
+	text.innerHTML = '<span style="color:' + theme[0] + ';font-size:14px;">Skill '+i+'</span>';
 	text.style.color = theme[1];
 	text.style.position = 'absolute';
 	text.style.left = '0px';
