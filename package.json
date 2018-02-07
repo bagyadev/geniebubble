@@ -1,5 +1,8 @@
 {
   "name": "geniebubble",
+  "scripts": {
+    "start": "grunt serve --force"
+  },
   "private": true,
   "devDependencies": {
     "autoprefixer-core": "^5.2.1",
