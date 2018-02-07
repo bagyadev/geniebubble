@@ -1,7 +1,7 @@
 {
   "name": "geniebubble",
   "scripts": {
-    "postinstall": "bower install && grunt build",
+    "postinstall": "npm install && grunt build",
     "start": "grunt serve --force"
   },
   "private": true,
